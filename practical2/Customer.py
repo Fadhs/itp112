@@ -23,8 +23,6 @@ class Customer:
         print("Customer ID: ", self.__customer_id)
         print("Customer Name: ", self.__name)
 
-
-
 c1 = Customer("1234A", "Andrea Tan")
 c1.display_details()
 
