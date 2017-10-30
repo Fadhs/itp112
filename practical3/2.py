@@ -25,7 +25,6 @@ class Pet:
 
     def set_age(self, age):
         self.__age = age
-
 pet = Pet()
 name = input('Enter pet name: ')
 type = input('Enter pet type: ')
