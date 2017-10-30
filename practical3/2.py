@@ -15,13 +15,13 @@ class Pet:
         return self.__age
 
     def set_name(self, name):
-        if name in self.__class__.types:
-            self.__name = name
-        else:
-            print('Pet type', type, 'is not a valid pet type')
+        self.__name = name
 
     def set_animal_type(self, animal_type):
-        self.__animal_type = animal_type
+        if animal_type in self.__class__.types:
+            self.__animal_type = animal_type
+        else:
+            print('Pet type', type, 'is not a valid pet type')
 
     def set_age(self, age):
         self.__age = age
