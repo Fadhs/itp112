@@ -8,7 +8,6 @@ class BankAccount:
             print('Your balance', self.__balance, 'is not enough')
         else:
             self.__balance -= amount
-
     def deposit(self, amount):
         self.__balance += amount
 
