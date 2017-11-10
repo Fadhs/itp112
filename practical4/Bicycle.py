@@ -4,14 +4,11 @@
 import Vehicle
 
 class Bicycle(Vehicle.Vehicle):
-    def __init__(self, initial="BY"):
+    def __init__(self, gear_count = 1):
         Vehicle.Vehicle.__init__(self, initial="BY")
-        self.__gear_Count = 1
+        self.__gear_count = gear_count
 
     def __str__(self):
         s= Vehicle.Vehicle.__str__(self)
-        s = s + " Gear Count: " + str(self.__gear_Count)
+        s = s + " Gear Count: " + str(self.__gear_count)
         return s
-
-
-

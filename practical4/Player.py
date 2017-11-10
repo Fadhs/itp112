@@ -26,7 +26,7 @@ class BasketBallPlayer(Player):
 class SoccerPlayer(Player):
     positions = ['Defender', 'Midfielder', 'Forward', 'Goalkeeper']
     def __init__(self, name):
-        Player.__init__(name)
+        Player.__init__(self, name)
         self.__position = ''
 
     def get_position(self):
