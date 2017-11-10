@@ -4,9 +4,12 @@
 import Vehicle
 
 class Skateboard(Vehicle.Vehicle):
-    def __init__(self):
+    def __init__(self, length = 0):
         Vehicle.Vehicle.__init__(self, initial="SK")
-        self.__board_length = 0
+        self.__board_length = length
 
-
+    def __str__(self):
+        s= Vehicle.Vehicle.__str__(self)
+        s = s + " Length: " + str(self.__board_length)
+        return s
 
