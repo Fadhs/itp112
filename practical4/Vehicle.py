@@ -3,6 +3,7 @@ class Vehicle:
     count = 0
 
     def __init__(self, initial):
+        print(self.__class__.count)
         self.__class__.count +=1
         self.__register_Number = initial + str(self.__class__.count)
 
