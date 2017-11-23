@@ -8,6 +8,9 @@ class Bicycle(Vehicle.Vehicle):
         Vehicle.Vehicle.__init__(self, initial="BY")
         self.__gear_count = gear_count
 
+    def get_gear_count(self):
+        self.__gear_count
+
     def __str__(self):
         s= Vehicle.Vehicle.__str__(self)
         s = s + " Gear Count: " + str(self.__gear_count)
