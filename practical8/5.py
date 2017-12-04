@@ -17,15 +17,7 @@ def main():
 
 def load_result():
     students = []
-    result_file = open('results.txt', 'r')
-    for result in result_file:
-        list = result.split(',')
-        s = Student(list[0])
-        s.math = float(list[1])
-        s.chinese = float(list[2])
-        s.english = float(list[3])
-        s.science = float(list[4])
-        students.append(s)
+    # implement the load result logic here
     return students
 
 main()
