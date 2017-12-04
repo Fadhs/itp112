@@ -10,11 +10,14 @@ class Student:
     def get_score(self):
         return (self.math + self.chinese + self.english + self.science) / 4
 
+def main():
+    students = load_result()
+    for s in students:
+        print(s.name, s.get_score())
+
 def load_result():
     students = []
     # implement the load result logic here
     return students
 
-list = load_result()
-for s in list:
-    print(s.name, s.get_score())
+main()
