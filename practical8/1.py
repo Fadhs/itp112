@@ -1,0 +1,6 @@
+myfile = open('myfile.txt', 'w')
+myfile.write('John\n')
+myfile.write('71\n')
+myfile.write('1.70\n')
+#myfile.writelines(['John\n', '71\n', '1.70\n'])
+myfile.close()
